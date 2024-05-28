@@ -46,13 +46,13 @@ const Page = () => {
                         <h1>Total Clicks : {data?.data || 0}</h1>
                     </div>
                 ) : (
-                    <div className="flex flex-col md:items-start md:justify-start gap-3 mt-7">
-                        <h1 className=" mt-4 text-xl font-semibold">What is ShortId?</h1>
-                        <p className=" text-md font-medium">The last 7 digit at the end of url</p>
-                        <h1 className=" text-xl font-semibold">For Example :</h1>
-                        <h1 className=" text-xl font-semibold">Url : trim.theshiva.xyz/xyz1234</h1>
-                        <p className="text-md font-medium">xyz1234 is the short id</p>
-                    </div>
+                    <div className="mt-7 border-2 border-gray-200 rounded-lg p-4">
+                    <h1 className="text-xl font-semibold mb-2">What is ShortId?</h1>
+                    <p className="text-md font-medium mb-4">The last 7 digits at the end of the URL.</p>
+                    <h1 className="text-xl font-semibold mb-2">For Example:</h1>
+                    <p className="text-md font-medium mb-4">URL: zapurl.vercel.app/xyz1234</p>
+                    <p className="text-md font-medium">xyz1234 is the short id.</p>
+                </div>
                 )}
             </div>
         </>

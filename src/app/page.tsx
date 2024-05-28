@@ -81,12 +81,12 @@ const Page = () => {
                         <X onClick={() => setIsUrlGenerated(false)} />
                     </div>
                     <h1 className="text-xl md:text-2xl">
-                        {process.env.NEXT_PUBLIC_APP_URL || "zapurl.vercel.app"}/{(response as ResponseProps)?.data?.shortUrl || ""}
+                        {process.env.NEXT_PUBLIC_APP_URL || "https://zapurl.vercel.app"}/{(response as ResponseProps)?.data?.shortUrl || ""}
                     </h1>
 
                     <div className="flex gap-3 w-full justify-end items-end">
                         {isCopied ? <Copy /> : <Clipboard onClick={copyToClipboard} className=" cursor-pointer" />}
-                        {(response as ResponseProps)?.data && <ShareBtn url={`${process.env.NEXT_PUBLIC_APP_URL || "zapurl.vercel.app"}/${(response as ResponseProps)?.data?.shortUrl || ""}`} />}
+                        {(response as ResponseProps)?.data && <ShareBtn url={`${process.env.NEXT_PUBLIC_APP_URL || "https://zapurl.vercel.app"}/${(response as ResponseProps)?.data?.shortUrl || ""}`} />}
                     </div>
                 </div>
             )}
